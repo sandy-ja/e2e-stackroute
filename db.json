@@ -1,0 +1,9 @@
+{
+  "movies": [
+    {
+      "title": "Movie1",
+      "story": "This is the story of Movie1",
+      "id": 1
+    }
+  ]
+}

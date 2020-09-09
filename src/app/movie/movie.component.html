@@ -1,0 +1,35 @@
+<div id = "Movie">
+    <div class="container">
+        <form [formGroup]="form" (ngSubmit)=" onSubmit()">
+        <div class="row">
+          <div class="col-25">
+            <label>Movie Title</label>
+          </div>
+          <div class="col-75">
+            <input formControlName="title" type="text"  placeholder="Enter movie title">
+          </div>
+        </div>
+            
+        <div class="row">
+          <div class="col-25">
+            <label>Story of the Movie</label>
+          </div>
+          <div class="col-75">
+            <textarea formControlName="story" placeholder="Enter story of movie" style="height:140px"></textarea>
+          </div>
+        </div>
+
+        <div class="row">
+          <input class="btn" type="submit" value="Add Movie">
+        </div>
+      </form>    
+
+           <!-- write logic to display message if form is submitted-->
+        <div class="alert" >
+          {{message}}
+        </div>
+    </div>
+</div>
+    
+    
+    
